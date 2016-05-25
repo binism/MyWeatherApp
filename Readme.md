@@ -15,7 +15,9 @@ Summuary Stack View.Bottom -> Temperature Label.Top
 View.Leading +  - > Today Low Temp Stack View.Leading
 Temperature Label.Bottom - > Today Low Temp Stack View.Top
 
-Today Low Temp Stack View.Top - > HeatIndex Image View.Top,Today High Stack View.top
+Today Low Temp Stack View.Top - > HeatIndex Image View.Top , Today High Stack View.top
 
 
 View.Trailing - > Today High Temp Stack View.Trailing
+
+
