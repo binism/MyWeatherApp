@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CDCB0531CF44BC500959069 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDCB0521CF44BC500959069 /* LaunchScreen.xib */; };
 		2CDFAA121CF4376400D11112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFAA111CF4376400D11112 /* AppDelegate.swift */; };
 		2CDFAA141CF4376400D11112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFAA131CF4376400D11112 /* ViewController.swift */; };
 		2CDFAA171CF4376400D11112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDFAA151CF4376400D11112 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CDCB0521CF44BC500959069 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2CDFAA0E1CF4376400D11112 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CDFAA111CF4376400D11112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CDFAA131CF4376400D11112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				2CDFAA131CF4376400D11112 /* ViewController.swift */,
 				2CDFAA151CF4376400D11112 /* Main.storyboard */,
 				2CDFAA181CF4376400D11112 /* Assets.xcassets */,
+				2CDCB0521CF44BC500959069 /* LaunchScreen.xib */,
 				2CDFAA1A1CF4376400D11112 /* LaunchScreen.storyboard */,
 				2CDFAA1D1CF4376400D11112 /* Info.plist */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDCB0531CF44BC500959069 /* LaunchScreen.xib in Resources */,
 				2CDFAA1C1CF4376400D11112 /* LaunchScreen.storyboard in Resources */,
 				2CDFAA191CF4376400D11112 /* Assets.xcassets in Resources */,
 				2CDFAA171CF4376400D11112 /* Main.storyboard in Resources */,
@@ -288,6 +292,7 @@
 				2CDFAA221CF4376400D11112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
