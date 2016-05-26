@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -64,20 +64,20 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XwT-6a-A77" userLabel="Today High Temp Stack View">
-                                <rect key="frame" x="265" y="291" width="39" height="0.0"/>
+                                <rect key="frame" x="265" y="291" width="39" height="42"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwZ-FL-1Ah" userLabel="Today High Temperate ">
-                                        <rect key="frame" x="0.0" y="0.0" width="39" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwZ-FL-1Ah" userLabel="Today High Temperate ">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="l93-Zo-jot"/>
-                                            <constraint firstAttribute="width" constant="30" id="yBA-j8-swN"/>
+                                            <constraint firstAttribute="width" constant="39" id="yBA-j8-swN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.97872388359999996" green="0.23590033699999999" blue="0.1757373314" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HIGH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO9-eP-Fnh" userLabel="Today High Temperate Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="39" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO9-eP-Fnh" userLabel="Today High Temperate Label">
+                                        <rect key="frame" x="0.0" y="21" width="39" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="FWt-D6-hTJ"/>
                                             <constraint firstAttribute="width" constant="39" id="ZCS-yl-8NA"/>
@@ -88,28 +88,27 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="OwZ-FL-1Ah" firstAttribute="top" secondItem="XwT-6a-A77" secondAttribute="top" id="Amr-Rq-yY5"/>
                                     <constraint firstItem="HO9-eP-Fnh" firstAttribute="top" secondItem="XwT-6a-A77" secondAttribute="top" constant="21" id="HMA-qn-Vo2"/>
                                     <constraint firstItem="OwZ-FL-1Ah" firstAttribute="centerX" secondItem="XwT-6a-A77" secondAttribute="centerX" id="IWw-Mg-TWz"/>
-                                    <constraint firstItem="OwZ-FL-1Ah" firstAttribute="leading" secondItem="HO9-eP-Fnh" secondAttribute="leading" id="lpX-9J-xn5"/>
-                                    <constraint firstItem="OwZ-FL-1Ah" firstAttribute="top" secondItem="HO9-eP-Fnh" secondAttribute="bottom" id="uLg-pC-obV"/>
                                     <constraint firstItem="HO9-eP-Fnh" firstAttribute="centerX" secondItem="XwT-6a-A77" secondAttribute="centerX" id="uvw-Jd-nlW"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="q25-lq-QXS" userLabel="Today Low Temp Stack View">
-                                <rect key="frame" x="260" y="300" width="30" height="0.0"/>
+                                <rect key="frame" x="260" y="300" width="39" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqI-jC-eU2" userLabel="Today Low Temperate">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="YBm-iI-L3V"/>
-                                            <constraint firstAttribute="width" constant="30" id="z3j-Hv-GQT"/>
+                                            <constraint firstAttribute="width" constant="39" id="z3j-Hv-GQT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.027450980390000001" green="0.59215686270000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-Ps-Haf" userLabel="Today Low Temperate Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="21" width="39" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="39" id="B8q-YU-sQ3"/>
                                             <constraint firstAttribute="height" constant="21" id="oma-jq-R9p"/>
@@ -120,10 +119,9 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="pqI-jC-eU2" firstAttribute="top" secondItem="q25-lq-QXS" secondAttribute="top" id="70I-Oa-Pxu"/>
                                     <constraint firstItem="aS9-Ps-Haf" firstAttribute="centerX" secondItem="q25-lq-QXS" secondAttribute="centerX" id="OUS-vD-V6b"/>
                                     <constraint firstItem="aS9-Ps-Haf" firstAttribute="top" secondItem="q25-lq-QXS" secondAttribute="top" constant="21" id="eGQ-ZY-Mzn"/>
-                                    <constraint firstItem="pqI-jC-eU2" firstAttribute="top" secondItem="aS9-Ps-Haf" secondAttribute="bottom" id="ekd-3k-hQV"/>
-                                    <constraint firstItem="pqI-jC-eU2" firstAttribute="leading" secondItem="aS9-Ps-Haf" secondAttribute="leading" id="nBD-Fo-ulE"/>
                                     <constraint firstItem="pqI-jC-eU2" firstAttribute="centerX" secondItem="q25-lq-QXS" secondAttribute="centerX" id="ywy-Od-Gs4"/>
                                 </constraints>
                             </stackView>
@@ -141,12 +139,12 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uw6-ZU-deq" userLabel="Wind Stack View">
-                                <rect key="frame" x="281" y="294" width="40" height="32"/>
+                                <rect key="frame" x="281" y="294" width="37" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.70" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-Sh-0uy" userLabel="Wind Index">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="15"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="2bX-Tn-SuW"/>
+                                            <constraint firstAttribute="width" constant="37" id="2bX-Tn-SuW"/>
                                             <constraint firstAttribute="height" constant="15" id="S0j-fb-WEX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
@@ -154,7 +152,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLt-MC-NQY" userLabel="WIND Label">
-                                        <rect key="frame" x="0.0" y="20" width="40" height="12"/>
+                                        <rect key="frame" x="0.0" y="15" width="37" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="dKr-wM-0Fy"/>
                                             <constraint firstAttribute="width" constant="37" id="vbP-rE-PzG"/>
@@ -167,8 +165,6 @@
                                     <constraint firstItem="uLt-MC-NQY" firstAttribute="centerX" secondItem="uw6-ZU-deq" secondAttribute="centerX" id="AbW-kj-5W2"/>
                                     <constraint firstItem="uLt-MC-NQY" firstAttribute="top" secondItem="9mz-Sh-0uy" secondAttribute="bottom" id="V6m-DW-cj7"/>
                                     <constraint firstItem="9mz-Sh-0uy" firstAttribute="top" secondItem="uw6-ZU-deq" secondAttribute="top" id="eWa-pi-YD0"/>
-                                    <constraint firstAttribute="height" constant="32" id="el4-Tx-stj"/>
-                                    <constraint firstAttribute="width" constant="40" id="h9j-a6-eUy"/>
                                     <constraint firstItem="9mz-Sh-0uy" firstAttribute="centerX" secondItem="uw6-ZU-deq" secondAttribute="centerX" id="tDE-IC-tyQ"/>
                                 </constraints>
                             </stackView>
@@ -180,10 +176,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8ut-3i-2Tr" userLabel="Rain Stack View">
-                                <rect key="frame" x="279" y="293" width="40" height="32"/>
+                                <rect key="frame" x="279" y="293" width="37" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.70" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjB-mk-HmW" userLabel="Rain Index">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="37" id="JZx-nB-ZPS"/>
                                             <constraint firstAttribute="height" constant="15" id="Rjv-t6-f5t"/>
@@ -193,9 +189,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RAIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymw-W5-5pE" userLabel="RAIN Label">
-                                        <rect key="frame" x="0.0" y="20" width="40" height="12"/>
+                                        <rect key="frame" x="0.0" y="15" width="37" height="12"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="Mfq-Zi-1dZ"/>
+                                            <constraint firstAttribute="width" constant="37" id="Mfq-Zi-1dZ"/>
                                             <constraint firstAttribute="height" constant="12" id="yHd-G1-xH2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
@@ -205,8 +201,6 @@
                                 <constraints>
                                     <constraint firstItem="bjB-mk-HmW" firstAttribute="top" secondItem="8ut-3i-2Tr" secondAttribute="top" id="OBz-vO-v7s"/>
                                     <constraint firstItem="bjB-mk-HmW" firstAttribute="centerX" secondItem="8ut-3i-2Tr" secondAttribute="centerX" id="Qxc-JG-ee6"/>
-                                    <constraint firstAttribute="height" constant="32" id="jEa-mc-Jcf"/>
-                                    <constraint firstAttribute="width" constant="40" id="kx3-c5-TnB"/>
                                     <constraint firstItem="Ymw-W5-5pE" firstAttribute="top" secondItem="bjB-mk-HmW" secondAttribute="bottom" id="lro-Bg-UAY"/>
                                     <constraint firstItem="Ymw-W5-5pE" firstAttribute="centerX" secondItem="8ut-3i-2Tr" secondAttribute="centerX" id="wte-nT-J63"/>
                                 </constraints>
@@ -221,20 +215,20 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I7F-YT-HCH" userLabel="Humidity Stack View">
-                                <rect key="frame" x="288" y="291" width="40" height="32"/>
+                                <rect key="frame" x="288" y="291" width="37" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-0W-o2X" userLabel="Humidity Index">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="15"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="19" id="7TJ-9m-gfs"/>
-                                            <constraint firstAttribute="width" constant="24" id="Fe7-Q5-2Wi"/>
+                                            <constraint firstAttribute="height" constant="15" id="7TJ-9m-gfs"/>
+                                            <constraint firstAttribute="width" constant="37" id="Fe7-Q5-2Wi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                         <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1R-xb-HI0" userLabel="HUMIDITY Label">
-                                        <rect key="frame" x="0.0" y="20" width="40" height="12"/>
+                                        <rect key="frame" x="0.0" y="15" width="37" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="37" id="7eP-vF-nni"/>
                                             <constraint firstAttribute="height" constant="12" id="bzl-Tg-Hce"/>
@@ -247,9 +241,7 @@
                                     <constraint firstItem="X1R-xb-HI0" firstAttribute="centerX" secondItem="I7F-YT-HCH" secondAttribute="centerX" id="5hP-Lp-hhL"/>
                                     <constraint firstItem="X1R-xb-HI0" firstAttribute="top" secondItem="GIn-0W-o2X" secondAttribute="bottom" id="9HP-7G-5io"/>
                                     <constraint firstItem="GIn-0W-o2X" firstAttribute="top" secondItem="I7F-YT-HCH" secondAttribute="top" id="U9x-l4-Jrr"/>
-                                    <constraint firstAttribute="height" constant="32" id="YBt-QM-IiB"/>
                                     <constraint firstItem="GIn-0W-o2X" firstAttribute="centerX" secondItem="I7F-YT-HCH" secondAttribute="centerX" id="gwo-P4-Ldx"/>
-                                    <constraint firstAttribute="width" constant="40" id="sPF-22-V4T"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tDq-EU-XlN" userLabel="1stDay Stack View">
@@ -268,8 +260,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_ice" translatesAutoresizingMaskIntoConstraints="NO" id="zzE-F8-kLM" userLabel="1stDayImage">
                                         <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="QpM-Za-LAI"/>
-                                            <constraint firstAttribute="height" constant="35" id="dN1-ly-iQq"/>
+                                            <constraint firstAttribute="width" constant="40" id="QpM-Za-LAI"/>
+                                            <constraint firstAttribute="height" constant="40" id="dN1-ly-iQq"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56°/ 87°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G40-ur-Gw7" userLabel="1stDayHighLowTemp">
@@ -285,12 +277,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="259-zx-7yY"/>
-                                    <constraint firstItem="V6r-Qc-jbr" firstAttribute="bottom" secondItem="zzE-F8-kLM" secondAttribute="top" constant="2" id="789-de-qtW"/>
+                                    <constraint firstItem="V6r-Qc-jbr" firstAttribute="bottom" secondItem="zzE-F8-kLM" secondAttribute="top" id="789-de-qtW"/>
                                     <constraint firstAttribute="width" constant="40" id="BPN-x4-R75"/>
                                     <constraint firstItem="V6r-Qc-jbr" firstAttribute="centerX" secondItem="tDq-EU-XlN" secondAttribute="centerX" id="DOe-gr-cKq"/>
                                     <constraint firstItem="zzE-F8-kLM" firstAttribute="centerX" secondItem="tDq-EU-XlN" secondAttribute="centerX" id="ZED-qk-jlo"/>
                                     <constraint firstItem="G40-ur-Gw7" firstAttribute="centerX" secondItem="tDq-EU-XlN" secondAttribute="centerX" id="f2l-U4-t2r"/>
-                                    <constraint firstItem="G40-ur-Gw7" firstAttribute="top" secondItem="zzE-F8-kLM" secondAttribute="bottom" constant="2" id="fqZ-5X-cEa"/>
+                                    <constraint firstItem="G40-ur-Gw7" firstAttribute="top" secondItem="zzE-F8-kLM" secondAttribute="bottom" id="fqZ-5X-cEa"/>
                                     <constraint firstItem="zzE-F8-kLM" firstAttribute="centerY" secondItem="tDq-EU-XlN" secondAttribute="centerY" id="yUa-rY-QIK"/>
                                 </constraints>
                             </stackView>
@@ -310,8 +302,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_ice" translatesAutoresizingMaskIntoConstraints="NO" id="sb8-Np-WJF" userLabel="2ndDayImage">
                                         <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="15n-vR-yVt"/>
-                                            <constraint firstAttribute="width" constant="35" id="AfA-Zn-MPc"/>
+                                            <constraint firstAttribute="height" constant="40" id="15n-vR-yVt"/>
+                                            <constraint firstAttribute="width" constant="40" id="AfA-Zn-MPc"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56°/ 87°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCo-Hw-kBs" userLabel="2ndDayHighLowTemp">
@@ -326,13 +318,13 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="LCo-Hw-kBs" firstAttribute="top" secondItem="sb8-Np-WJF" secondAttribute="bottom" constant="2" id="6hV-jA-ly3"/>
+                                    <constraint firstItem="LCo-Hw-kBs" firstAttribute="top" secondItem="sb8-Np-WJF" secondAttribute="bottom" id="6hV-jA-ly3"/>
                                     <constraint firstItem="WeP-gG-Qsv" firstAttribute="centerX" secondItem="M8C-Qv-0rL" secondAttribute="centerX" id="VBg-1D-PHy"/>
                                     <constraint firstAttribute="width" constant="40" id="WNG-Qw-vmU"/>
                                     <constraint firstItem="sb8-Np-WJF" firstAttribute="centerX" secondItem="M8C-Qv-0rL" secondAttribute="centerX" id="deX-LI-tHA"/>
                                     <constraint firstItem="sb8-Np-WJF" firstAttribute="centerY" secondItem="M8C-Qv-0rL" secondAttribute="centerY" id="kWn-wI-SM8"/>
                                     <constraint firstAttribute="height" constant="80" id="lcy-H6-mvR"/>
-                                    <constraint firstItem="WeP-gG-Qsv" firstAttribute="bottom" secondItem="sb8-Np-WJF" secondAttribute="top" constant="2" id="r8y-2R-CVV"/>
+                                    <constraint firstItem="WeP-gG-Qsv" firstAttribute="bottom" secondItem="sb8-Np-WJF" secondAttribute="top" id="r8y-2R-CVV"/>
                                     <constraint firstItem="LCo-Hw-kBs" firstAttribute="centerX" secondItem="M8C-Qv-0rL" secondAttribute="centerX" id="x5a-yf-HLv"/>
                                 </constraints>
                             </stackView>
@@ -352,8 +344,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_ice" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-ZE-NTa" userLabel="3rdDayImage">
                                         <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="5TI-he-Sns"/>
-                                            <constraint firstAttribute="width" constant="35" id="auD-vb-I1f"/>
+                                            <constraint firstAttribute="height" constant="40" id="5TI-he-Sns"/>
+                                            <constraint firstAttribute="width" constant="40" id="auD-vb-I1f"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56°/ 87°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="182-54-OsJ" userLabel="3rdDayHighLowTemp">
@@ -373,9 +365,9 @@
                                     <constraint firstItem="182-54-OsJ" firstAttribute="centerX" secondItem="U1b-Pr-HAR" secondAttribute="centerX" id="RjU-Ia-64J"/>
                                     <constraint firstAttribute="height" constant="80" id="hDU-yP-PdB"/>
                                     <constraint firstItem="oUg-ZE-NTa" firstAttribute="centerX" secondItem="U1b-Pr-HAR" secondAttribute="centerX" id="od4-1V-dlY"/>
-                                    <constraint firstItem="182-54-OsJ" firstAttribute="top" secondItem="oUg-ZE-NTa" secondAttribute="bottom" constant="2" id="oi3-RD-WOH"/>
+                                    <constraint firstItem="182-54-OsJ" firstAttribute="top" secondItem="oUg-ZE-NTa" secondAttribute="bottom" id="oi3-RD-WOH"/>
                                     <constraint firstAttribute="width" constant="40" id="wOC-m2-fdq"/>
-                                    <constraint firstItem="7V9-qS-Cz8" firstAttribute="bottom" secondItem="oUg-ZE-NTa" secondAttribute="top" constant="2" id="xoX-R0-Zxv"/>
+                                    <constraint firstItem="7V9-qS-Cz8" firstAttribute="bottom" secondItem="oUg-ZE-NTa" secondAttribute="top" id="xoX-R0-Zxv"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0GW-90-ukP" userLabel="4thDay Stack View">
@@ -394,8 +386,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_ice" translatesAutoresizingMaskIntoConstraints="NO" id="FnO-hn-2fI" userLabel="4thDayImage">
                                         <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="XEb-qn-Mws"/>
-                                            <constraint firstAttribute="height" constant="35" id="Xa2-oy-KQc"/>
+                                            <constraint firstAttribute="width" constant="40" id="XEb-qn-Mws"/>
+                                            <constraint firstAttribute="height" constant="40" id="Xa2-oy-KQc"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56°/ 87°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enc-IM-wx2" userLabel="4thDayHighLowTemp">
@@ -410,13 +402,13 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Enc-IM-wx2" firstAttribute="top" secondItem="FnO-hn-2fI" secondAttribute="bottom" constant="2" id="0ei-lA-bek"/>
+                                    <constraint firstItem="Enc-IM-wx2" firstAttribute="top" secondItem="FnO-hn-2fI" secondAttribute="bottom" id="0ei-lA-bek"/>
                                     <constraint firstItem="FnO-hn-2fI" firstAttribute="centerX" secondItem="0GW-90-ukP" secondAttribute="centerX" id="7a2-Ya-tp5"/>
                                     <constraint firstItem="FnO-hn-2fI" firstAttribute="centerY" secondItem="0GW-90-ukP" secondAttribute="centerY" id="EGQ-Pw-0KB"/>
                                     <constraint firstAttribute="height" constant="80" id="J2c-ns-SZO"/>
                                     <constraint firstAttribute="width" constant="40" id="NjP-8Y-hJF"/>
                                     <constraint firstItem="6ZE-8m-16p" firstAttribute="centerX" secondItem="0GW-90-ukP" secondAttribute="centerX" id="QQ8-t5-zES"/>
-                                    <constraint firstItem="6ZE-8m-16p" firstAttribute="bottom" secondItem="FnO-hn-2fI" secondAttribute="top" constant="2" id="VfP-3o-aCV"/>
+                                    <constraint firstItem="6ZE-8m-16p" firstAttribute="bottom" secondItem="FnO-hn-2fI" secondAttribute="top" id="VfP-3o-aCV"/>
                                     <constraint firstItem="Enc-IM-wx2" firstAttribute="centerX" secondItem="0GW-90-ukP" secondAttribute="centerX" id="pYa-aA-ruU"/>
                                 </constraints>
                             </stackView>
@@ -436,8 +428,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_ice" translatesAutoresizingMaskIntoConstraints="NO" id="oe8-fr-3eS" userLabel="5thDayImage">
                                         <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="79X-U7-6WK"/>
-                                            <constraint firstAttribute="height" constant="35" id="a58-hT-mK4"/>
+                                            <constraint firstAttribute="width" constant="40" id="79X-U7-6WK"/>
+                                            <constraint firstAttribute="height" constant="40" id="a58-hT-mK4"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56°/ 87°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-17-gmP" userLabel="5thDayHighLowTemp">
@@ -454,10 +446,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="8iE-VD-GNJ"/>
                                     <constraint firstItem="Tbd-17-gmP" firstAttribute="centerX" secondItem="bDv-xd-mDs" secondAttribute="centerX" id="Nnl-ck-5qY"/>
-                                    <constraint firstItem="Tbd-17-gmP" firstAttribute="top" secondItem="oe8-fr-3eS" secondAttribute="bottom" constant="2" id="R0I-qf-dD4"/>
+                                    <constraint firstItem="Tbd-17-gmP" firstAttribute="top" secondItem="oe8-fr-3eS" secondAttribute="bottom" id="R0I-qf-dD4"/>
                                     <constraint firstItem="oe8-fr-3eS" firstAttribute="centerY" secondItem="bDv-xd-mDs" secondAttribute="centerY" id="VQ4-V1-rBJ"/>
                                     <constraint firstItem="7OV-fj-oKV" firstAttribute="centerX" secondItem="bDv-xd-mDs" secondAttribute="centerX" id="XLe-gm-hcj"/>
-                                    <constraint firstItem="7OV-fj-oKV" firstAttribute="bottom" secondItem="oe8-fr-3eS" secondAttribute="top" constant="2" id="ltV-zg-rFs"/>
+                                    <constraint firstItem="7OV-fj-oKV" firstAttribute="bottom" secondItem="oe8-fr-3eS" secondAttribute="top" id="ltV-zg-rFs"/>
                                     <constraint firstItem="oe8-fr-3eS" firstAttribute="centerX" secondItem="bDv-xd-mDs" secondAttribute="centerX" id="pI6-Br-isL"/>
                                     <constraint firstAttribute="height" constant="80" id="qt9-NW-y1I"/>
                                 </constraints>
@@ -478,8 +470,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_ice" translatesAutoresizingMaskIntoConstraints="NO" id="9ut-pw-cda" userLabel="6thDayImage">
                                         <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="Zlm-JR-k0S"/>
-                                            <constraint firstAttribute="height" constant="35" id="i6Q-9S-YTh"/>
+                                            <constraint firstAttribute="width" constant="40" id="Zlm-JR-k0S"/>
+                                            <constraint firstAttribute="height" constant="40" id="i6Q-9S-YTh"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56°/ 87°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w69-c3-jr5" userLabel="6thDayHighLowTemp">
@@ -498,9 +490,9 @@
                                     <constraint firstItem="9ut-pw-cda" firstAttribute="centerY" secondItem="YXo-CK-mXe" secondAttribute="centerY" id="GLf-CA-u78"/>
                                     <constraint firstItem="9ut-pw-cda" firstAttribute="centerX" secondItem="YXo-CK-mXe" secondAttribute="centerX" id="XL1-TS-U4m"/>
                                     <constraint firstItem="w69-c3-jr5" firstAttribute="centerX" secondItem="YXo-CK-mXe" secondAttribute="centerX" id="Yvc-gP-mVz"/>
-                                    <constraint firstItem="w69-c3-jr5" firstAttribute="top" secondItem="9ut-pw-cda" secondAttribute="bottom" constant="2" id="fbz-mb-e6A"/>
+                                    <constraint firstItem="w69-c3-jr5" firstAttribute="top" secondItem="9ut-pw-cda" secondAttribute="bottom" id="fbz-mb-e6A"/>
                                     <constraint firstAttribute="height" constant="80" id="fqw-f5-HWJ"/>
-                                    <constraint firstItem="F8e-Xl-1ii" firstAttribute="bottom" secondItem="9ut-pw-cda" secondAttribute="top" constant="2" id="sAw-2e-cJr"/>
+                                    <constraint firstItem="F8e-Xl-1ii" firstAttribute="bottom" secondItem="9ut-pw-cda" secondAttribute="top" id="sAw-2e-cJr"/>
                                     <constraint firstAttribute="width" constant="40" id="sgb-5F-eCn"/>
                                 </constraints>
                             </stackView>
@@ -552,6 +544,9 @@
                             <constraint firstItem="YXo-CK-mXe" firstAttribute="leading" secondItem="bDv-xd-mDs" secondAttribute="trailing" constant="10" id="zkz-3S-PEh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UserLocationLabel" destination="boq-YB-iMj" id="cjY-Vp-I48"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
