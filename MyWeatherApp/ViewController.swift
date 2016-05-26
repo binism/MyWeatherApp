@@ -51,7 +51,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             var coord = locationObj.coordinate
             self.userLatitude = coord.latitude
             self.userLongitude = coord.longitude
-            
+            //
             //getCurrentWeatherData()
             
             
