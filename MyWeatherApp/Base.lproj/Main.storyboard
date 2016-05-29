@@ -545,7 +545,42 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CurrentTempratureLabel" destination="9Rp-TG-hSZ" id="bFx-c6-qix"/>
+                        <outlet property="DayFiveHighLowTemp" destination="Tbd-17-gmP" id="D4D-Ns-TDz"/>
+                        <outlet property="DayFiveImg" destination="oe8-fr-3eS" id="9KI-YM-eAu"/>
+                        <outlet property="DayFiveWeekDay" destination="7OV-fj-oKV" id="Hna-uX-4gd"/>
+                        <outlet property="DayFourHignLowTemp" destination="Enc-IM-wx2" id="8al-E5-mx0"/>
+                        <outlet property="DayFourImg" destination="FnO-hn-2fI" id="clx-i5-mep"/>
+                        <outlet property="DayFourWeekDay" destination="6ZE-8m-16p" id="deg-LC-WLf"/>
+                        <outlet property="DayOneHighLowTemp" destination="G40-ur-Gw7" id="hWH-EC-pk2"/>
+                        <outlet property="DayOneImg" destination="zzE-F8-kLM" id="c1r-6N-obP"/>
+                        <outlet property="DayOneWeekDay" destination="V6r-Qc-jbr" id="I15-ZE-uKZ"/>
+                        <outlet property="DaySixHighLowTemp" destination="w69-c3-jr5" id="gVT-PI-ZNl"/>
+                        <outlet property="DaySixImg" destination="9ut-pw-cda" id="fes-Kf-Auv"/>
+                        <outlet property="DaySixWeekDay" destination="F8e-Xl-1ii" id="vUz-K7-Tgl"/>
+                        <outlet property="DayThreeHighLowTemp" destination="182-54-OsJ" id="Cuq-BX-qZe"/>
+                        <outlet property="DayThreeImg" destination="oUg-ZE-NTa" id="U0f-6R-ZEF"/>
+                        <outlet property="DayThreeWeekDaty" destination="7V9-qS-Cz8" id="OC7-fS-pBz"/>
+                        <outlet property="DayTwoHighLowTemp" destination="LCo-Hw-kBs" id="yuo-iq-xVv"/>
+                        <outlet property="DayTwoImg" destination="sb8-Np-WJF" id="S89-ip-A4h"/>
+                        <outlet property="DayTwoWeekDay" destination="WeP-gG-Qsv" id="jp5-gL-n8Z"/>
+                        <outlet property="HeatIndexImg" destination="1ta-uX-7RB" id="Pua-ek-o5t"/>
+                        <outlet property="HumidityIndex" destination="GIn-0W-o2X" id="DY1-Jj-YkE"/>
+                        <outlet property="HumidityLabel" destination="X1R-xb-HI0" id="tXL-qV-Wll"/>
+                        <outlet property="RainIndex" destination="bjB-mk-HmW" id="MRO-Wc-Tsc"/>
+                        <outlet property="RainLabel" destination="Ymw-W5-5pE" id="f64-KI-Ufz"/>
+                        <outlet property="SummaryIcon" destination="aEG-AJ-3fj" id="aiB-4F-4qV"/>
+                        <outlet property="SummaryLabel" destination="AUY-vc-sp9" id="VQH-5x-hNu"/>
+                        <outlet property="TodayHighTemperature" destination="OwZ-FL-1Ah" id="rNr-Kq-ENL"/>
+                        <outlet property="TodayHighTemperatureLabel" destination="HO9-eP-Fnh" id="5aI-eP-0R6"/>
+                        <outlet property="TodayLowTemperature" destination="pqI-jC-eU2" id="jsk-hD-rZs"/>
+                        <outlet property="TodayLowTemperatureLabel" destination="aS9-Ps-Haf" id="SGp-h0-RFG"/>
                         <outlet property="UserLocationLabel" destination="boq-YB-iMj" id="cjY-Vp-I48"/>
+                        <outlet property="WindIndex" destination="9mz-Sh-0uy" id="SOb-ds-IOa"/>
+                        <outlet property="WindLabel" destination="uLt-MC-NQY" id="P3a-eO-bwN"/>
+                        <outlet property="humidityImg" destination="gsu-lA-jsp" id="XI6-RF-3b7"/>
+                        <outlet property="umbrellaImg" destination="gS7-oB-ALe" id="hN6-SB-WrO"/>
+                        <outlet property="windbagImg" destination="gXF-x0-frd" id="FWA-Oz-5VO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
