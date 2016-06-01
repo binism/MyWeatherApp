@@ -1,0 +1,29 @@
+PODS:
+  - ForecastIO (1.6.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - ForecastIO (from `https://github.com/sxg/ForecastIO.git`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  ForecastIO:
+    :git: https://github.com/sxg/ForecastIO.git
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  ForecastIO:
+    :commit: 240879dd0a04e459be1a09540c4ee1cb27c06e88
+    :git: https://github.com/sxg/ForecastIO.git
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  ForecastIO: 8ae627f1b5e6a815af4730904aa89b483a390349
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: f963e6bd5afb5754b52bcdc84f7d3fe1495afb62
+
+COCOAPODS: 1.0.0

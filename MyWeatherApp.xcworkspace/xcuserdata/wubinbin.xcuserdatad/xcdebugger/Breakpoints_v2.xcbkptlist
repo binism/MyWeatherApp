@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "1"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -9,14 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyWeatherApp/LocationService.swift"
-            timestampString = "485944981.045425"
+            filePath = "MyWeatherApp/ViewController.swift"
+            timestampString = "486484678.530992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "displayLocationInfo(_:)"
-            landmarkType = "5">
+            startingLineNumber = "224"
+            endingLineNumber = "224">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,27 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "486397582.869454"
+            timestampString = "486399026.600152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "initLocationManager()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "485969042.881813"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
@@ -54,30 +36,30 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.DayFiveWeekDay.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "MyWeatherApp.ViewController.CurrentTempratureLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.733043"
+                  timestampString = "486399026.644742"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
                   offsetFromSymbolStart = "40">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.DayFiveWeekDay.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "MyWeatherApp.ViewController.CurrentTempratureLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.733199"
+                  timestampString = "486399026.645397"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
@@ -88,12 +70,12 @@
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.733296"
+                  timestampString = "486399026.646019"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "1668">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "264">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -103,168 +85,12 @@
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.733378"
+                  timestampString = "486399026.646731"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "1608">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "485963828.973637"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.DayFourHignLowTemp.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.736197"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.DayFourHignLowTemp.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.73632"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; MyWeatherApp.ViewController"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.736423"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "1616">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyWeatherApp.ViewController&gt;"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486480342.73652"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "1556">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "485963828.973637"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.RainLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486399024.078031"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.RainLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486399024.07827"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; MyWeatherApp.ViewController"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486399024.078381"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "836">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyWeatherApp.ViewController&gt;"
-                  moduleName = "MyWeatherApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486399024.078497"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "776">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "204">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -276,73 +102,183 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "485963828.973637"
+            timestampString = "486480371.321616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWeatherApp/ViewController.swift"
+            timestampString = "486480383.162978"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWeatherApp/ViewController.swift"
+            timestampString = "486480386.196566"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.DayTwoWeekDay.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "MyWeatherApp.ViewController.DayFiveImg.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486484680.235211"
+                  timestampString = "486480386.23848"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
                   offsetFromSymbolStart = "40">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyWeatherApp.ViewController.DayTwoWeekDay.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "MyWeatherApp.ViewController.DayFiveImg.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486484680.235504"
+                  timestampString = "486480386.239431"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MyWeatherApp.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; MyWeatherApp.ViewController"
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486484680.235748"
+                  timestampString = "486480386.239862"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "1200">
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1720">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MyWeatherApp.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyWeatherApp.ViewController&gt;"
                   moduleName = "MyWeatherApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
-                  timestampString = "486484680.23597"
+                  timestampString = "486480386.240159"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "1140">
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1660">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWeatherApp/ViewController.swift"
+            timestampString = "486480387.294269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWeatherApp.ViewController.DayFiveHighLowTemp.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "MyWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
+                  timestampString = "486480387.327994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWeatherApp.ViewController.DayFiveHighLowTemp.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "MyWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
+                  timestampString = "486480387.328444"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWeatherApp.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; MyWeatherApp.ViewController"
+                  moduleName = "MyWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
+                  timestampString = "486480387.328635"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1772">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWeatherApp.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyWeatherApp.ViewController&gt;"
+                  moduleName = "MyWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wubinbin/Desktop/swift/MyWeatherApp/MyWeatherApp/ViewController.swift"
+                  timestampString = "486480387.328749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1712">
                </Location>
             </Locations>
          </BreakpointContent>

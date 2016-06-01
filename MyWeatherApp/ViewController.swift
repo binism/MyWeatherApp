@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 import CoreLocation
+import SwiftyJSON
+import ForecastIO
 class ViewController: UIViewController, CLLocationManagerDelegate {
     //MARK:@IBOut Today
     //UserLocation
@@ -88,12 +90,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var userLatitude : Double!
     var userLongitude : Double!
     var userTemperatureCelsius : Bool!
-    
+    private let apiKey = "3ca0a959a8dec53b4f84092dc623c246" //https://developer.forecast.io
+    //private let baseURL = "https://api.forecast.io/forecast/"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         initLocationManager()
+        
     }
+    
+    //MARK: Location
     func initLocationManager() {
         seenError = false
         locationFixAchieved = false
@@ -120,7 +126,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.userLongitude = coord.longitude
             //
             //getCurrentWeatherData()
-            
+             getCurrentWeatherInfo()
+
             
         }
     }
@@ -166,6 +173,37 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             NSLog("Denied access: \(locationStatus)")
         }
     }
+    //MARK: WeatherInfo
+    func getCurrentWeatherInfo() -> Void {
+        let forecastIOClient = APIClient(apiKey: "\(apiKey)")
+        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude) { (currentForecast, error) -> Void in
+            if let currentForecast = currentForecast {
+                //  We got the current forecast!
+                
+                
+                print(currentForecast.currently?.apparentTemperature)
+                if let CurrentTemprature = currentForecast.currently?.apparentTemperature {
+                    self.CurrentTempratureLabel.text = "\(Fahrenheit2Celsius(CurrentTemprature))°"
+                }
+                else {
+                    print("cannot get CurrentTemprature")
+                }
+                
+                if let Summary = currentForecast.currently?.summary {
+                    self.SummaryLabel.text = "\(Summary)"
+                }
+                else {
+                    print("Cannot get Summary")
+                }
+            } else if let error = error {
+                //  Uh-oh we have an error!
+                print(error)
+            }
+            
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
