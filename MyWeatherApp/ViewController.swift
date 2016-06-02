@@ -70,7 +70,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //4thDayStackView
     @IBOutlet weak var DayFourWeekDay: UILabel!
     @IBOutlet weak var DayFourImg: UIImageView!
-    @IBOutlet weak var DayFourHignLowTemp: UILabel!
+    @IBOutlet weak var DayFourHighLowTemp: UILabel!
+    
     
     //5thDayStackView
     @IBOutlet weak var DayFiveWeekDay: UILabel!
@@ -202,7 +203,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 
                 //Today High Temperatur
-                if let HighTemp = currentForecast.currently!.temperatureMax {
+                if let HighTemp = currentForecast.daily?.data![1].apparentTemperatureMax {
                     print("Today High temp: \(HighTemp)")
                     self.TodayHighTemperature.text = "\(Fahrenheit2Celsius(HighTemp))"
                 }
@@ -213,13 +214,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 
                 //Today Low Temperature
-                if let LowTemp = currentForecast.daily?.data{
-                    //print("Today Low temp: \(LowTemp)")
-                    //self.TodayLowTemperature.text = "\(Fahrenheit2Celsius(LowTemp))"
-                    for ele in LowTemp{
-                        print(ele)
-                        print("\n\n\n\n\n")
-                    }
+                if let LowTemp = currentForecast.daily?.data![1].apparentTemperatureMin{
+                    print("Today Low temp: \(LowTemp)")
+                    self.TodayLowTemperature.text = "\(Fahrenheit2Celsius(LowTemp))"
+                    
                 }
                 else {
                     print("Cannot get Low temprature")
@@ -254,6 +252,104 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 else {
                     print("Canot get Humidity")
                 }
+                
+                
+                
+                //MARK: Day1~6 Icon
+                //Day1 Icon
+                if let dayOneIcon = currentForecast.daily?.data![2].icon {
+                    print("dayOne icon: \(dayOneIcon)")
+                }
+                //Day2 Icon
+                if let dayTwoIcon = currentForecast.daily?.data![3].icon {
+                    print("dayTwo icon: \(dayTwoIcon)")
+                }
+                //Day3 Icon
+                if let dayThreeIcon = currentForecast.daily?.data![4].icon {
+                    print("dayTHree icon: \(dayThreeIcon)")
+                }
+                //Day4 Icon
+                if let dayFourIcon = currentForecast.daily?.data![5].icon {
+                    print("dayFour icon: \(dayFourIcon)")
+                }
+                //Day5 Icon
+                if let dayFiveIcon = currentForecast.daily?.data![6].icon {
+                    print("dayFive icon: \(dayFiveIcon)")
+                }
+                //Day6 Icon
+                if let daySixIcon = currentForecast.daily?.data![7].icon {
+                    print("daySix icon: \(daySixIcon)")
+                }
+                
+                
+                
+                //MARK: Day1~6 High/Low temprature
+                //Day1
+                if let dayOneHighTemp = currentForecast.daily?.data![2].apparentTemperatureMax ,
+                    dayOneLowTemp = currentForecast.daily?.data![2].apparentTemperatureMin  {
+                    print("Day one High : \(dayOneHighTemp)")
+                    print("Day one Low : \(dayOneLowTemp)")
+                    let HignLow = "\(Fahrenheit2Celsius(dayOneLowTemp))°/\(Fahrenheit2Celsius(dayOneHighTemp))°"
+                    self.DayOneHighLowTemp.text = HignLow
+                }
+                else {
+                    print("Cannot get Day one High and Low")
+                }
+                //Day2
+                if let dayTwoHighTemp = currentForecast.daily?.data![3].apparentTemperatureMax ,
+                    dayTwoLowTemp = currentForecast.daily?.data![3].apparentTemperatureMin  {
+                    print("Day two High : \(dayTwoHighTemp)")
+                    print("Day two Low : \(dayTwoLowTemp)")
+                    let HignLow = "\(Fahrenheit2Celsius(dayTwoLowTemp))°/\(Fahrenheit2Celsius(dayTwoHighTemp))°"
+                    self.DayTwoHighLowTemp.text = HignLow
+                }
+                else {
+                    print("Cannot get Day two High and Low")
+                }
+                //Day3
+                if let dayThreeHighTemp = currentForecast.daily?.data![4].apparentTemperatureMax ,
+                    dayThreeLowTemp = currentForecast.daily?.data![4].apparentTemperatureMin  {
+                    print("Day three High : \(dayThreeHighTemp)")
+                    print("Day three Low : \(dayThreeLowTemp)")
+                    let HignLow = "\(Fahrenheit2Celsius(dayThreeLowTemp))°/\(Fahrenheit2Celsius(dayThreeHighTemp))°"
+                    self.DayThreeHighLowTemp.text = HignLow
+                }
+                else {
+                    print("Cannot get Day Three High and Low")
+                }
+                //Day4
+                if let dayFourHighTemp = currentForecast.daily?.data![5].apparentTemperatureMax ,
+                    dayFourLowTemp = currentForecast.daily?.data![5].apparentTemperatureMin  {
+                    print("Day four High : \(dayFourHighTemp)")
+                    print("Day four Low : \(dayFourLowTemp)")
+                    let HignLow = "\(Fahrenheit2Celsius(dayFourLowTemp))°/\(Fahrenheit2Celsius(dayFourHighTemp))°"
+                    self.DayFourHighLowTemp.text = HignLow
+                }
+                else {
+                    print("Cannot get Day Four High and Low")
+                }
+                //Day5
+                if let dayFiveHighTemp = currentForecast.daily?.data![6].apparentTemperatureMax ,
+                    dayFiveLowTemp = currentForecast.daily?.data![6].apparentTemperatureMin  {
+                    print("Day five High : \(dayFiveHighTemp)")
+                    print("Day five Low : \(dayFiveLowTemp)")
+                    let HignLow = "\(Fahrenheit2Celsius(dayFiveLowTemp))°/\(Fahrenheit2Celsius(dayFiveHighTemp))°"
+                    self.DayFiveHighLowTemp.text = HignLow
+                }
+                else {
+                    print("Cannot get Day Five High and Low")
+                }
+                //Day6
+                if let daySixHighTemp = currentForecast.daily?.data![7].apparentTemperatureMax ,
+                    daySixLowTemp = currentForecast.daily?.data![7].apparentTemperatureMin  {
+                    print("Day six High : \(daySixHighTemp)")
+                    print("Day six Low : \(daySixLowTemp)")
+                    let HignLow = "\(Fahrenheit2Celsius(daySixLowTemp))°/\(Fahrenheit2Celsius(daySixHighTemp))°"
+                    self.DaySixHighLowTemp.text = HignLow
+                }
+                else {
+                    print("Cannot get Day Six High and Low")
+                }
             } else if let error = error {
                 //  Uh-oh we have an error!
                 print(error)
@@ -286,77 +382,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
         }
         
-        let DayTwo = DayOne.dateByAddingTimeInterval(86400)
-        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayTwo) { (DayTwoForecast, DayTwoError) in
-            if let dayTwoForecast = DayTwoForecast {
-                if let dayTwoSummary = dayTwoForecast.currently?.summary {
-                    print("Day 2 Summary: \(dayTwoSummary)")
-                }
-                else {
-                    print("Cannot get Day 2 Summary")
-                }
-                if let dayTwoHighTemp = dayTwoForecast.currently?.apparentTemperatureMax , dayTwoLowTemp = dayTwoForecast.currently?.apparentTemperatureMin  {
-                    print("Day 2 High : \(dayTwoHighTemp)")
-                    print("Day 2 Low : \(dayTwoLowTemp)")
-                }
-                else {
-                    print("Cannot get Day 2 High and Low")
-                }
-                
-            }
-            else if let error = DayTwoError {
-                //  Uh-oh we have an error!
-                print(error)
-            }
-        }
         
-        let DayThree = DayTwo.dateByAddingTimeInterval(86400)
-        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayThree) { (DayThreeForecast, DayThreeError) in
-            if let dayThreeForecast = DayThreeForecast {
-                if let dayThreeSummary = dayThreeForecast.currently?.summary {
-                    print("Day 3 Summary: \(dayThreeSummary)")
-                }
-                else {
-                    print("Cannot get Day 3 Summary")
-                }
-                if let dayThreeHighTemp = dayThreeForecast.currently?.apparentTemperatureMax , dayThreeLowTemp = dayThreeForecast.currently?.apparentTemperatureMin  {
-                    print("Day 3 High : \(dayThreeHighTemp)")
-                    print("Day 3 Low : \(dayThreeLowTemp)")
-                }
-                else {
-                    print("Cannot get Day 3 High and Low")
-                }
-                
-            }
-            else if let error = DayThreeError {
-                //  Uh-oh we have an error!
-                print(error)
-            }
-        }
-        
-        let DayFour = DayThree.dateByAddingTimeInterval(86400)
-        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayFour) { (DayFourForecast, DayFourError) in
-            if let dayFourForecast = DayFourForecast {
-                if let dayFourSummary = dayFourForecast.currently?.summary {
-                    print("Day 4 Summary: \(dayFourSummary)")
-                }
-                else {
-                    print("Cannot get Day 4 Summary")
-                }
-                if let dayFourHighTemp = dayFourForecast.currently?.apparentTemperatureMax , dayFourLowTemp = dayFourForecast.currently?.apparentTemperatureMin  {
-                    print("Day 4 High : \(dayFourHighTemp)")
-                    print("Day 4 Low : \(dayFourLowTemp)")
-                }
-                else {
-                    print("Cannot get Day 4 High and Low")
-                }
-                
-            }
-            else if let error = DayFourError {
-                //  Uh-oh we have an error!
-                print(error)
-            }
-        }
 
         
     }

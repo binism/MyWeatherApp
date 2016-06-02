@@ -549,7 +549,7 @@
                         <outlet property="DayFiveHighLowTemp" destination="Tbd-17-gmP" id="D4D-Ns-TDz"/>
                         <outlet property="DayFiveImg" destination="oe8-fr-3eS" id="9KI-YM-eAu"/>
                         <outlet property="DayFiveWeekDay" destination="7OV-fj-oKV" id="Hna-uX-4gd"/>
-                        <outlet property="DayFourHignLowTemp" destination="Enc-IM-wx2" id="8al-E5-mx0"/>
+                        <outlet property="DayFourHighLowTemp" destination="Enc-IM-wx2" id="JOo-wX-nJj"/>
                         <outlet property="DayFourImg" destination="FnO-hn-2fI" id="clx-i5-mep"/>
                         <outlet property="DayFourWeekDay" destination="6ZE-8m-16p" id="deg-LC-WLf"/>
                         <outlet property="DayOneHighLowTemp" destination="G40-ur-Gw7" id="hWH-EC-pk2"/>
