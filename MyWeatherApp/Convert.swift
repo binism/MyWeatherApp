@@ -45,3 +45,28 @@ func weatherIconFromString(stringIcon: String) -> UIImage {
 func Fahrenheit2Celsius(f: Float) -> Int {
     return Int((Double(f)-32.0) / 1.8)
 }
+
+func summaryEN2CN(summaryEN : String ) -> String {
+    var summaryCN : String
+    switch summaryEN {
+    case "clear-day", "clear-night" :
+        summaryCN = "晴"
+    case "rain" :
+        summaryCN = "雨"
+    case "snow" :
+        summaryCN = "雪"
+    case "sleet" :
+        summaryCN = "冻雨"
+    case "wind" :
+        summaryCN = "风"
+    case "fog" :
+        summaryCN = "雾"
+    case "cloudy" :
+        summaryCN = "阴"
+    case "partly-cloudy-day", "partly-cloudy-night" :
+        summaryCN = "多云"
+    default:
+        summaryCN = "default"
+    }
+    return summaryCN
+}

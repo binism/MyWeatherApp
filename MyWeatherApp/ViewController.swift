@@ -181,19 +181,74 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 //  We got the current forecast!
                 
                 
-                print(currentForecast.currently?.apparentTemperature)
+                //CurrentTemprature
                 if let CurrentTemprature = currentForecast.currently?.apparentTemperature {
+                    print("current temprature: \(CurrentTemprature)")
                     self.CurrentTempratureLabel.text = "\(Fahrenheit2Celsius(CurrentTemprature))°"
                 }
                 else {
-                    print("cannot get CurrentTemprature")
+                    print("Cannot get CurrentTemprature")
                 }
                 
-                if let Summary = currentForecast.currently?.summary {
-                    self.SummaryLabel.text = "\(Summary)"
+                
+                //Today Summary
+                if let Summary: String = currentForecast.currently?.summary {
+                    print("Summary: \(Summary)")
+                    self.SummaryLabel.text = summaryEN2CN(Summary)
                 }
                 else {
                     print("Cannot get Summary")
+                }
+                
+                
+                //Today High Temperature
+                if let HighTemp = currentForecast.currently?.apparentTemperatureMax {
+                    print("Today High temp: \(HighTemp)")
+                    self.TodayHighTemperature.text = "\(Fahrenheit2Celsius(HighTemp))"
+                }
+                else {
+                    print("Cannot get High temprature")
+                }
+                
+                
+                
+                //Today Low Temperature
+                if let LowTemp = currentForecast.currently?.apparentTemperatureMin {
+                    print("Today Low temp: \(LowTemp)")
+                    self.TodayLowTemperature.text = "\(Fahrenheit2Celsius(LowTemp))"
+                }
+                else {
+                    print("Cannot get High temprature")
+                }
+                
+                
+                //Wind Speed
+                if let WindSpeed = currentForecast.currently?.windSpeed {
+                    print("Wind Speed: \(WindSpeed)")
+                    self.WindIndex.text = "\(WindSpeed)"
+                }
+                else {
+                    print("Cannot get Wind Speed")
+                }
+                
+                
+                //Rain precipProbability
+                if let RainPreci = currentForecast.currently?.precipProbability {
+                    print("Rain Preci: \(RainPreci)")
+                    self.RainIndex.text = "\(RainPreci)"
+                }
+                else {
+                    print("Cannot get Rain Preci")
+                }
+                
+                
+                //Humidity
+                if let Humi = currentForecast.currently?.humidity {
+                    print("Humidity: \(Humi)")
+                    self.HumidityIndex.text = "\(Humi)"
+                }
+                else {
+                    print("Canot get Humidity")
                 }
             } else if let error = error {
                 //  Uh-oh we have an error!
