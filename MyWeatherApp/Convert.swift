@@ -66,7 +66,7 @@ func summaryEN2CN(summaryEN : String ) -> String {
     case "partly-cloudy-day", "partly-cloudy-night" :
         summaryCN = "多云"
     default:
-        summaryCN = "default"
+        summaryCN = summaryEN
     }
     return summaryCN
 }

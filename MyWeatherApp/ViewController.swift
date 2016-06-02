@@ -201,8 +201,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
                 
                 
-                //Today High Temperature
-                if let HighTemp = currentForecast.currently?.apparentTemperatureMax {
+                //Today High Temperatur
+                if let HighTemp = currentForecast.currently!.temperatureMax {
                     print("Today High temp: \(HighTemp)")
                     self.TodayHighTemperature.text = "\(Fahrenheit2Celsius(HighTemp))"
                 }
@@ -213,12 +213,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 
                 //Today Low Temperature
-                if let LowTemp = currentForecast.currently?.apparentTemperatureMin {
-                    print("Today Low temp: \(LowTemp)")
-                    self.TodayLowTemperature.text = "\(Fahrenheit2Celsius(LowTemp))"
+                if let LowTemp = currentForecast.daily?.data{
+                    //print("Today Low temp: \(LowTemp)")
+                    //self.TodayLowTemperature.text = "\(Fahrenheit2Celsius(LowTemp))"
+                    for ele in LowTemp{
+                        print(ele)
+                        print("\n\n\n\n\n")
+                    }
                 }
                 else {
-                    print("Cannot get High temprature")
+                    print("Cannot get Low temprature")
                 }
                 
                 
@@ -256,6 +260,104 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             
         }
+        let Today = NSDate()
+        let DayOne = Today.dateByAddingTimeInterval(86400)
+        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayOne) { (DayOneForecast, DayOneError) in
+            if let dayOneForecast = DayOneForecast {
+                if let dayOneSummary = dayOneForecast.currently?.summary {
+                    print("Day one Summary: \(dayOneSummary)")
+                }
+                else {
+                    print("Cannot get Day one Summary")
+                }
+                if let dayOneHighTemp = dayOneForecast.currently?.apparentTemperatureMax , dayOneLowTemp = dayOneForecast.currently?.apparentTemperatureMin  {
+                    print("Day one High : \(dayOneHighTemp)")
+                    print("Day one Low : \(dayOneLowTemp)")
+                }
+                else {
+                    print("Cannot get Day one High and Low")
+                }
+                
+            }
+            else if let error = DayOneError {
+            //  Uh-oh we have an error!
+            print(error)
+            }
+
+        }
+        
+        let DayTwo = DayOne.dateByAddingTimeInterval(86400)
+        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayTwo) { (DayTwoForecast, DayTwoError) in
+            if let dayTwoForecast = DayTwoForecast {
+                if let dayTwoSummary = dayTwoForecast.currently?.summary {
+                    print("Day 2 Summary: \(dayTwoSummary)")
+                }
+                else {
+                    print("Cannot get Day 2 Summary")
+                }
+                if let dayTwoHighTemp = dayTwoForecast.currently?.apparentTemperatureMax , dayTwoLowTemp = dayTwoForecast.currently?.apparentTemperatureMin  {
+                    print("Day 2 High : \(dayTwoHighTemp)")
+                    print("Day 2 Low : \(dayTwoLowTemp)")
+                }
+                else {
+                    print("Cannot get Day 2 High and Low")
+                }
+                
+            }
+            else if let error = DayTwoError {
+                //  Uh-oh we have an error!
+                print(error)
+            }
+        }
+        
+        let DayThree = DayTwo.dateByAddingTimeInterval(86400)
+        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayThree) { (DayThreeForecast, DayThreeError) in
+            if let dayThreeForecast = DayThreeForecast {
+                if let dayThreeSummary = dayThreeForecast.currently?.summary {
+                    print("Day 3 Summary: \(dayThreeSummary)")
+                }
+                else {
+                    print("Cannot get Day 3 Summary")
+                }
+                if let dayThreeHighTemp = dayThreeForecast.currently?.apparentTemperatureMax , dayThreeLowTemp = dayThreeForecast.currently?.apparentTemperatureMin  {
+                    print("Day 3 High : \(dayThreeHighTemp)")
+                    print("Day 3 Low : \(dayThreeLowTemp)")
+                }
+                else {
+                    print("Cannot get Day 3 High and Low")
+                }
+                
+            }
+            else if let error = DayThreeError {
+                //  Uh-oh we have an error!
+                print(error)
+            }
+        }
+        
+        let DayFour = DayThree.dateByAddingTimeInterval(86400)
+        forecastIOClient.getForecast(latitude: userLatitude, longitude: userLongitude, time: DayFour) { (DayFourForecast, DayFourError) in
+            if let dayFourForecast = DayFourForecast {
+                if let dayFourSummary = dayFourForecast.currently?.summary {
+                    print("Day 4 Summary: \(dayFourSummary)")
+                }
+                else {
+                    print("Cannot get Day 4 Summary")
+                }
+                if let dayFourHighTemp = dayFourForecast.currently?.apparentTemperatureMax , dayFourLowTemp = dayFourForecast.currently?.apparentTemperatureMin  {
+                    print("Day 4 High : \(dayFourHighTemp)")
+                    print("Day 4 Low : \(dayFourLowTemp)")
+                }
+                else {
+                    print("Cannot get Day 4 High and Low")
+                }
+                
+            }
+            else if let error = DayFourError {
+                //  Uh-oh we have an error!
+                print(error)
+            }
+        }
+
         
     }
     
