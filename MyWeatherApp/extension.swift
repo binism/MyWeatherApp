@@ -7,3 +7,22 @@
 //
 
 import Foundation
+extension NSDate {
+    
+    
+    func dayOfWeek() -> Int {
+        
+        
+        let interval = self.timeIntervalSince1970;
+        
+        
+        let days = Int(interval / 86400);
+        
+        
+        return (days - 3) % 7;
+        
+        
+    }
+    
+    
+}

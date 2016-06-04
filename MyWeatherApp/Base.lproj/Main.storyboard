@@ -560,7 +560,7 @@
                         <outlet property="DaySixWeekDay" destination="F8e-Xl-1ii" id="vUz-K7-Tgl"/>
                         <outlet property="DayThreeHighLowTemp" destination="182-54-OsJ" id="Cuq-BX-qZe"/>
                         <outlet property="DayThreeImg" destination="oUg-ZE-NTa" id="U0f-6R-ZEF"/>
-                        <outlet property="DayThreeWeekDaty" destination="7V9-qS-Cz8" id="OC7-fS-pBz"/>
+                        <outlet property="DayThreeWeekDay" destination="7V9-qS-Cz8" id="ncV-tQ-nFE"/>
                         <outlet property="DayTwoHighLowTemp" destination="LCo-Hw-kBs" id="yuo-iq-xVv"/>
                         <outlet property="DayTwoImg" destination="sb8-Np-WJF" id="S89-ip-A4h"/>
                         <outlet property="DayTwoWeekDay" destination="WeP-gG-Qsv" id="jp5-gL-n8Z"/>

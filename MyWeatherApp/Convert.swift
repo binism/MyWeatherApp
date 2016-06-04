@@ -13,28 +13,28 @@ func weatherIconFromString(stringIcon: String) -> UIImage {
     var imageName: String
     
     switch stringIcon {
-    case "clear-day":
-        imageName = "clear-day"
-    case "clear-night":
-        imageName = "clear-night"
-    case "rain":
+    case "ClearDay":
+        imageName = "sun"
+    case "ClearNight":
+        imageName = "fullmoon"
+    case "Rain":
         imageName = "rain"
-    case "snow":
+    case "Snow":
         imageName = "snow"
-    case "sleet":
-        imageName = "sleet"
-    case "wind":
+    case "Sleet":
+        imageName = "rain_and_snow"
+    case "Wind":
         imageName = "wind"
-    case "fog":
+    case "Fog":
         imageName = "fog"
-    case "cloudy":
-        imageName = "cloudy"
-    case "partly-cloudy-day":
-        imageName = "partly-cloudy"
-    case "partly-cloudy-night":
-        imageName = "cloudy-night"
+    case "Cloudy":
+        imageName = "overcast"
+    case "PartlyCloudyDay":
+        imageName = "sun_max_clouds"
+    case "PartlyCloudyNight":
+        imageName = "moon_cloud_medium"
     default:
-        imageName = "default"
+        imageName = "sun"
     }
     
     let iconImage = UIImage(named: imageName)
@@ -69,4 +69,29 @@ func summaryEN2CN(summaryEN : String ) -> String {
         summaryCN = summaryEN
     }
     return summaryCN
+}
+
+
+func weekdayINT2STRING(i : Int) -> String{
+    let wdInt = i % 7
+    var wdStr = "NULL"
+    switch wdInt {
+    case 0:
+        wdStr = "Sun"
+    case 1:
+        wdStr = "Mon"
+    case 2:
+        wdStr = "Tues"
+    case 3:
+        wdStr = "Wed"
+    case 4:
+        wdStr = "Thur"
+    case 5:
+        wdStr = "Fri"
+    case 6:
+        wdStr = "Sat"
+    default:
+        wdStr = "NULL"
+    }
+    return wdStr
 }
