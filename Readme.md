@@ -1,21 +1,3 @@
-## main.storyboard组件位置依赖关系
-（View CentryX，View CentryY）－> Background Image View
+#MyWeatherApp#
 
-
-Top LayoutGuide.Bottom +  - >  Location Label.Top
-View CentryX - > Location Label.CentryX
-
-
-Location Label.Bottom +  - > Summuary Stack View.Top
-View CentryX - > Summuary Stack View.CentryX
-
-View CentryX - > Temperature Label.CentryX
-Summuary Stack View.Bottom -> Temperature Label.Top
-
-View.Leading +  - > Today Low Temp Stack View.Leading
-Temperature Label.Bottom - > Today Low Temp Stack View.Top
-
-Today Low Temp Stack View.Top - > HeatIndex Image View.Top,Today High Stack View.top
-
-
-View.Trailing - > Today High Temp Stack View.Trailing
+![Ipone5s截图](https://github.com/binism/MyWeatherApp/blob/master/SreenShot/Simulator%20Screen%20Shot%20May%2025%2C%202016%2C%2010.03.39%20PM.png)
