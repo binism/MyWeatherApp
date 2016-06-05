@@ -49,21 +49,21 @@ func Fahrenheit2Celsius(f: Float) -> Int {
 func summaryEN2CN(summaryEN : String ) -> String {
     var summaryCN : String
     switch summaryEN {
-    case "clear-day", "clear-night" :
+    case "ClearDay", "ClearNight" :
         summaryCN = "晴"
-    case "rain" :
+    case "Rain" :
         summaryCN = "雨"
-    case "snow" :
+    case "Snow" :
         summaryCN = "雪"
-    case "sleet" :
+    case "Sleet" :
         summaryCN = "冻雨"
-    case "wind" :
+    case "Wind" :
         summaryCN = "风"
-    case "fog" :
+    case "Fog" :
         summaryCN = "雾"
-    case "cloudy" :
+    case "Cloudy" :
         summaryCN = "阴"
-    case "partly-cloudy-day", "partly-cloudy-night" :
+    case "PartlyCloudyDay", "PartlyCloudyNight" :
         summaryCN = "多云"
     default:
         summaryCN = summaryEN

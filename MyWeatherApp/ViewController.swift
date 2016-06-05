@@ -181,10 +181,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 				if let currentForecast = currentForecast {
 					//  We got the current forecast!
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        //CurrentTemprature
+                        //CurrentTemprature and HeatIndeximg
                         if let CurrentTemprature = currentForecast.currently?.temperature {
                             print("current temprature: \(CurrentTemprature)")
                             self.CurrentTempratureLabel.text = "\(Fahrenheit2Celsius(CurrentTemprature))°"
+                            if CurrentTemprature < 60 {
+                                self.HeatIndexImg.image = UIImage(named: "heatindexWinter")
+                                self.TodayLowTemperature.textColor = UIColor(red: 0/255.0, green: 121/255.0, blue: 255/255.0, alpha: 1.0)
+                                self.TodayHighTemperature.textColor = UIColor(red: 245/255.0, green: 6/255.0, blue: 93/255.0, alpha: 1.0)
+                                
+                                
+                            } else {
+                                self.HeatIndexImg.image = UIImage(named:"heatindex")
+                                
+                            }
                         }
                         else {
                             print("Cannot get CurrentTemprature")
@@ -197,9 +207,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         }
 
                         //Today Summary
-                        if let Summary: String = currentForecast.currently?.summary {
+                        if let Summary = currentForecast.currently?.icon {
                             print("Summary: \(Summary)")
-                                self.SummaryLabel.text = summaryEN2CN(Summary)
+                                self.SummaryLabel.text = summaryEN2CN("\(Summary)")
                         }
                         else {
                             print("Cannot get Summary")
@@ -208,6 +218,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         if let HighTemp = currentForecast.daily?.data![1].temperatureMax {
                             print("Today High temp: \(HighTemp)")
                             self.TodayHighTemperature.text = "\(Fahrenheit2Celsius(HighTemp))"
+                            //HighTemp = 93.0
+                            if(HighTemp > 91){
+                                let localNotification:UILocalNotification = UILocalNotification()
+                                localNotification.alertAction = "Project MyWeather"
+                                localNotification.alertBody = "It's going to be Hot today!"
+                                localNotification.fireDate = NSDate(timeIntervalSinceNow: 8)
+                                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                            }
                         }
                         else {
                             print("Cannot get High temprature")
@@ -229,6 +247,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         if let WindSpeed = currentForecast.currently?.windSpeed {
                             print("Wind Speed: \(WindSpeed)")
                             self.WindIndex.text = "\(WindSpeed)"
+                            if(WindSpeed > 38.0){
+                                let localNotification:UILocalNotification = UILocalNotification()
+                                localNotification.alertAction = "Project MyWeather"
+                                localNotification.alertBody = "It's going to be windy today!"
+                                localNotification.fireDate = NSDate(timeIntervalSinceNow: 8)
+                                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                            }
                         }
                         else {
                             print("Cannot get Wind Speed")
@@ -236,9 +261,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
 
                         //Rain precipProbability
-                        if let RainPreci = currentForecast.currently?.precipProbability {
+                        if let RainPreci = currentForecast.daily?.data![1].precipProbability {
                             print("Rain Preci: \(RainPreci)")
                             self.RainIndex.text = "\(RainPreci)"
+                            if (RainPreci > 0.90){
+                                let localNotification:UILocalNotification = UILocalNotification()
+                                localNotification.alertAction = "Project MyWeather"
+                                localNotification.alertBody = "Today could be a rainy day. Don't forget your umbrella!"
+                                localNotification.fireDate = NSDate(timeIntervalSinceNow: 8)
+                                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                            }
                         }
                         else {
                             print("Cannot get Rain Preci")

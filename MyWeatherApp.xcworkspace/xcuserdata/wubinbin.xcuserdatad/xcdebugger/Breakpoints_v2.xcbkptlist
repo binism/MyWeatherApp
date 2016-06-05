@@ -276,11 +276,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "486736597.207869"
+            timestampString = "486806251.492703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
             landmarkName = "getCurrentWeatherInfo()"
             landmarkType = "5">
             <Locations>
@@ -324,11 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "486736597.207869"
+            timestampString = "486806251.492703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
             landmarkName = "getCurrentWeatherInfo()"
             landmarkType = "5">
          </BreakpointContent>
@@ -340,11 +340,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "486736597.207869"
+            timestampString = "486806251.492703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "374"
-            endingLineNumber = "374"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
             landmarkName = "getCurrentWeatherInfo()"
             landmarkType = "5">
          </BreakpointContent>
@@ -356,11 +356,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeatherApp/ViewController.swift"
-            timestampString = "486736597.207869"
+            timestampString = "486806251.492703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "374"
-            endingLineNumber = "374"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
             landmarkName = "getCurrentWeatherInfo()"
             landmarkType = "5">
             <Locations>
