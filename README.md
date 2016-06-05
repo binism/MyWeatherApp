@@ -7,7 +7,8 @@
 SwiftWeather is an iOS weather app developed in Swift 2. The app has been actively upgrading to adopt the latest features of iOS and Swift language.
 
 
-##How to build## 
+##How to build##
+ 
 1)Clone the repository
 
 ```bash
@@ -43,14 +44,21 @@ private let apiKey = "your apiKey" //https://developer.forecast.io
 
 ##Pods##
 1) ForecastIO
+
 [ForecastIO](https://github.com/sxg/ForecastIO)A Swift library for the Forecast.io weather API.
+
 2) SwiftyJSON
+
 [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) SwiftyJSON makes it easy to deal with JSON data in Swift. *NOT USED AT PRESENT PROJECT*
 
 ##TUDO##
-1) Cannot deal with Rotate. Need to update main.storyboard with Rutate View
+
+1) Cannot deal with Rotate. Need to update main.storyboard with Rotate View
+
 2) Adding new features
 
 ##SreenShots##
-![截图1](https://github.com/binism/MyWeatherApp/blob/master/SreenShot/Screen%20Shot%202016-06-05%20at%204.37.03%20PM.png
-![截图](https://github.com/binism/MyWeatherApp/blob/master/SreenShot/Screen%20Shot%202016-06-05%20at%204.09.16%20PM.png)
+
+![截图1](https://github.com/binism/MyWeatherApp/blob/master/SreenShot/Screen%20Shot%202016-06-05%20at%204.37.03%20PM.png)
+
+![截图2](https://github.com/binism/MyWeatherApp/blob/master/SreenShot/Screen%20Shot%202016-06-05%20at%204.09.16%20PM.png)
