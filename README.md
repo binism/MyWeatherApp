@@ -1,4 +1,4 @@
-#MyWeatherApp#
+# MyWeatherApp #
 ==========
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=562a9aac2492560100211378&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/562a9aac2492560100211378/build/latest)
 ![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
@@ -7,7 +7,7 @@
 SwiftWeather is an iOS weather app developed in Swift 2. The app has been actively upgrading to adopt the latest features of iOS and Swift language.
 
 
-##How to build##
+## How to build ##
  
 1)Clone the repository
 
@@ -37,12 +37,12 @@ private let apiKey = "your apiKey" //https://developer.forecast.io
 
 6) If you don't see any data, please check "Simulator" -> "Debug" -> "Location" to change the location.
 
-##Requirements##
+## Requirements ##
 
 * Xcode 7
 * iOS 9
 
-##Pods##
+## Pods ##
 1) ForecastIO
 
 [ForecastIO](https://github.com/sxg/ForecastIO)A Swift library for the Forecast.io weather API.
@@ -51,13 +51,13 @@ private let apiKey = "your apiKey" //https://developer.forecast.io
 
 [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) SwiftyJSON makes it easy to deal with JSON data in Swift. *NOT USED AT PRESENT PROJECT*
 
-##TUDO##
+## TUDO ##
 
 1) Cannot deal with Rotate. Need to update main.storyboard with Rotate View
 
 2) Adding new features
 
-##SreenShots##
+## SreenShots ##
 
 ![截图1](https://github.com/binism/MyWeatherApp/blob/master/SreenShot/Screen%20Shot%202016-06-05%20at%204.37.03%20PM.png)
 
